@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartBook - Pembukuan UMKM Berbasis AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="8" fill="#6366F1"/>
+                        <path d="M9 11C9 10.4477 9.44772 10 10 10H22C22.5523 10 23 10.4477 23 11V21C23 21.5523 22.5523 22 22 22H10C9.44772 22 9 21.5523 9 21V11Z" stroke="white" stroke-width="2"/>
+                        <path d="M13 14H19M13 17H19M13 20H16" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <span>SmartBook</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#fitur">Fitur</a></li>
+                    <li><a href="#solusi">Solusi</a></li>
+                    <li><a href="#keunggulan">Keunggulan</a></li>
+                    <li><a href="#demo">Demo</a></li>
+                    <li><a href="#tentang">Tentang</a></li>
+                </ul>
+                <button class="cta-button" onclick="window.location.href='#cta-section'">Coba Gratis</button>
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">✨ Solusi Pembukuan Modern</div>
+                    <h1>Pembukuan UMKM Semudah <span class="gradient-text">Kirim Chat</span></h1>
+                    <p>SmartBook menggunakan AI untuk mengubah pesan chat menjadi catatan keuangan otomatis. Kelola pembukuan UMKM Anda dengan cepat, mudah, dan akurat.</p>
+                    <div class="hero-cta">
+                        <button class="btn-primary">Mulai Sekarang</button>
+                        <button class="btn-secondary">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M8 7L13 10L8 13V7Z" fill="currentColor"/>
+                            </svg>
+                            Lihat Demo
+                        </button>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">UMKM Bergabung</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50K+</div>
+                            <div class="stat-label">Transaksi Tercatat</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">99%</div>
+                            <div class="stat-label">Akurasi AI</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="mockup">
+                        <div class="mockup-header">
+                            <div class="mockup-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="chat-demo">
+                                <div class="chat-message user">
+                                    <p>Jual 20 pcs baju @150rb</p>
+                                </div>
+                                <div class="chat-message bot">
+                                    <div class="typing-indicator">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="chat-message bot success">
+                                    <p>✓ Tercatat: Penjualan Rp 3.000.000</p>
+                                    <small>20 unit × Rp 150.000</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="fitur" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Fitur Unggulan</h2>
+                <p>Semua yang Anda butuhkan untuk mengelola keuangan UMKM</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="4" y="4" width="24" height="24" rx="4" stroke="#6366F1" stroke-width="2"/>
+                            <path d="M12 10V22M16 10V22M20 10V22" stroke="#6366F1" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Chat-to-Book</h3>
+                    <p>Cukup kirim pesan seperti "Jual 10 pcs @50rb" dan sistem akan otomatis mencatat transaksi Anda dengan detail lengkap.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M6 14L16 4L26 14M8 12V26H24V12" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="12" y="18" width="8" height="8" stroke="#10B981" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Dashboard Interaktif</h3>
+                    <p>Visualisasi data keuangan real-time dengan grafik dan laporan yang mudah dipahami untuk monitoring bisnis Anda.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="12" stroke="#F59E0B" stroke-width="2"/>
+                            <path d="M16 8V16L22 19" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>AI Pintar</h3>
+                    <p>Teknologi AI canggih yang memahami konteks bahasa Indonesia dan otomatis mengkategorikan setiap transaksi.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M8 10H24M8 16H24M8 22H16" stroke="#EC4899" stroke-width="2" stroke-linecap="round"/>
+                            <rect x="4" y="4" width="24" height="24" rx="4" stroke="#EC4899" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Laporan Lengkap</h3>
+                    <p>Download laporan keuangan dalam format Excel atau PDF. Cocok untuk perpajakan dan analisis bisnis mendalam.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4Z" stroke="#8B5CF6" stroke-width="2"/>
+                            <path d="M16 12V16L20 20" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Real-time Update</h3>
+                    <p>Semua pencatatan tersimpan otomatis dan tersinkronisasi secara real-time di cloud yang aman.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="6" y="8" width="20" height="16" rx="2" stroke="#06B6D4" stroke-width="2"/>
+                            <path d="M6 12H26M16 16H20M16 20H20M10 16H12M10 20H12" stroke="#06B6D4" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Multi-Platform</h3>
+                    <p>Akses dari mana saja melalui web, aplikasi mobile, atau langsung dari WhatsApp Business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem & Solution Section -->
+    <section id="solusi" class="problem-solution">
+        <div class="container">
+            <div class="ps-grid">
+                <div class="problem-card">
+                    <div class="ps-icon problem">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 8V12M12 16H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Masalah UMKM</h3>
+                    <ul class="problem-list">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 18L18 6M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Pencatatan keuangan manual sangat memakan waktu dan merepotkan</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 18L18 6M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Sering lupa mencatat transaksi karena kesibukan operasional</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 18L18 6M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Sulit memantau kesehatan keuangan bisnis secara real-time</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 18L18 6M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Pembukuan tradisional terlalu rumit dan butuh keahlian khusus</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="solution-card">
+                    <div class="ps-icon solution">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Solusi SmartBook</h3>
+                    <ul class="solution-list">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Cukup kirim pesan chat seperti berbicara dengan teman</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>AI otomatis memahami dan mencatat setiap transaksi dalam detik</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Dashboard real-time menampilkan kondisi finansial bisnis Anda</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Tidak perlu keahlian akuntansi, semua dilakukan otomatis</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- USP Section -->
+    <section id="keunggulan" class="usp-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kenapa Memilih SmartBook?</h2>
+                <p>Keunggulan yang membuat SmartBook berbeda dari yang lain</p>
+            </div>
+            <div class="usp-grid">
+                <div class="usp-card">
+                    <div class="usp-number">01</div>
+                    <h3>AI Pintar Bahasa Indonesia</h3>
+                    <p>Teknologi AI kami dilatih khusus untuk memahami bahasa Indonesia sehari-hari, termasuk slang dan istilah bisnis lokal seperti "rb", "jt", "pcs", dll.</p>
+                </div>
+                <div class="usp-card">
+                    <div class="usp-number">02</div>
+                    <h3>Tercepat di Kelasnya</h3>
+                    <p>Hanya butuh 5 detik untuk mencatat transaksi dari chat. Lebih cepat 10x dibanding input manual di spreadsheet atau aplikasi konvensional.</p>
+                </div>
+                <div class="usp-card">
+                    <div class="usp-number">03</div>
+                    <h3>Integrasi WhatsApp</h3>
+                    <p>Catat transaksi langsung dari WhatsApp Business tanpa install aplikasi tambahan. Chat seperti biasa, pembukuan otomatis tersimpan.</p>
+                </div>
+                <div class="usp-card">
+                    <div class="usp-number">04</div>
+                    <h3>Harga Terjangkau UMKM</h3>
+                    <p>Mulai dari Rp 49.000/bulan dengan trial gratis 14 hari. Investasi yang sangat worth it untuk kesehatan finansial bisnis Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Market Section -->
+    <section class="target-market">
+        <div class="container">
+            <div class="section-header">
+                <h2>Siapa yang Cocok Menggunakan SmartBook?</h2>
+                <p>SmartBook dirancang khusus untuk berbagai jenis UMKM di Indonesia</p>
+            </div>
+            <div class="market-grid">
+                <div class="market-card">
+                    <div class="market-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M9 22V12H15V22" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Retail & Toko</h3>
+                    <p>Pemilik toko kelontong, minimarket, toko fashion, dan retail lainnya yang memiliki transaksi harian tinggi.</p>
+                </div>
+                <div class="market-card">
+                    <div class="market-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Kuliner & F&B</h3>
+                    <p>Warung makan, cafe, katering, cloud kitchen yang perlu tracking bahan baku dan penjualan dengan cepat.</p>
+                </div>
+                <div class="market-card">
+                    <div class="market-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                            <rect x="2" y="7" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 7V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V7" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Jasa & Freelance</h3>
+                    <p>Penyedia jasa seperti salon, bengkel, desainer, konsultan yang ingin track income dan pengeluaran dengan mudah.</p>
+                </div>
+                <div class="market-card">
+                    <div class="market-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 16V8C20.9996 7.64927 20.9071 7.30481 20.7315 7.00116C20.556 6.69751 20.3037 6.44536 20 6.27L13 2.27C12.696 2.09446 12.3511 2.00205 12 2.00205C11.6489 2.00205 11.304 2.09446 11 2.27L4 6.27C3.69626 6.44536 3.44398 6.69751 3.26846 7.00116C3.09294 7.30481 3.00036 7.64927 3 8V16C3.00036 16.3507 3.09294 16.6952 3.26846 16.9988C3.44398 17.3025 3.69626 17.5546 4 17.73L11 21.73C11.304 21.9055 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9055 13 21.73L20 17.73C20.3037 17.5546 20.556 17.3025 20.7315 16.9988C20.9071 16.6952 20.9996 16.3507 21 16Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M3.27 6.96L12 12.01L20.73 6.96M12 22.08V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Online Shop & Reseller</h3>
+                    <p>Penjual online di marketplace, social commerce, dan reseller yang butuh pembukuan multi-channel.</p>
+                </div>
+            </div>
+            <div class="market-cta">
+                <p class="market-quote">"Bisnis Anda termasuk yang mana? Apa pun itu, SmartBook siap membantu!"</p>
+                <button class="btn-primary large" class="cta-button" onclick="window.location.href='#cta-section'">Mulai Gratis Sekarang</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="cara-kerja" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cara Kerja</h2>
+                <p>Tiga langkah mudah untuk pembukuan yang rapi</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Kirim Pesan</h3>
+                        <p>Ketik transaksi Anda dalam bahasa sehari-hari seperti "Beli bahan baku 500rb" atau "Terima pembayaran dari Pak Budi 2jt"</p>
+                    </div>
+                    <div class="step-illustration">
+                        <div class="chat-bubble">💬 Jual 15 pcs @75rb</div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>AI Memproses</h3>
+                        <p>Sistem AI kami menganalisis pesan, mengidentifikasi jenis transaksi, jumlah, dan kategori secara otomatis</p>
+                    </div>
+                    <div class="step-illustration">
+                        <div class="processing">
+                            <div class="spinner"></div>
+                            <span>Memproses...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Tercatat Otomatis</h3>
+                        <p>Data tersimpan rapi di dashboard Anda. Lihat grafik, unduh laporan, dan pantau kesehatan finansial bisnis</p>
+                    </div>
+                    <div class="step-illustration">
+                        <div class="success-check">✓</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo Section -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Coba Demo Interaktif</h2>
+                <p>Rasakan langsung kemudahan SmartBook - kirim pesan dan lihat hasilnya!</p>
+            </div>
+
+            <div class="demo-container">
+                <!-- Chat Interface -->
+                <div class="demo-chat">
+                    <div class="demo-header">
+                        <div class="demo-title">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M8 12H16M8 8H16M8 16H13M3 20.29V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7.58579C7.321 17 7.06702 17.1054 6.87868 17.2929L3 20.29Z" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Chat dengan SmartBook</span>
+                        </div>
+                        <div class="demo-status">
+                            <span class="status-dot"></span>
+                            <span>Online</span>
+                        </div>
+                    </div>
+
+                    <div class="demo-messages" id="demoMessages">
+                        <div class="demo-message bot">
+                            <div class="message-avatar bot-avatar">AI</div>
+                            <div class="message-content">
+                                <p>Halo! Saya SmartBook AI. Kirim pesan transaksi Anda, contoh:</p>
+                                <ul>
+                                    <li>"Jual 20 pcs baju @150rb"</li>
+                                    <li>"Beli bahan baku 500rb"</li>
+                                    <li>"Terima pembayaran dari Bu Siti 2jt"</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-quick-actions">
+                        <p>Coba contoh pesan:</p>
+                        <div class="quick-buttons">
+                            <button class="quick-btn" data-message="Jual 15 pcs sepatu @200rb">Jual 15 sepatu @200rb</button>
+                            <button class="quick-btn" data-message="Beli bahan baku 750rb">Beli bahan @750rb</button>
+                            <button class="quick-btn" data-message="Terima pembayaran dari Pak Andi 1.5jt">Terima bayar 1.5jt</button>
+                        </div>
+                    </div>
+
+                    <div class="demo-input">
+                        <input type="text" id="demoInput" placeholder="Ketik transaksi Anda disini..." />
+                        <button id="demoSend" class="send-btn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M19 1L9 11M19 1L13 19L9 11M19 1L1 7L9 11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Dashboard Preview -->
+                <div class="demo-dashboard">
+                    <div class="dashboard-header">
+                        <h3>Dashboard Preview</h3>
+                        <span class="live-badge">Live</span>
+                    </div>
+
+                    <div class="dashboard-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon income">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 17L12 22L22 17M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="stat-details">
+                                <p class="stat-label">Pemasukan</p>
+                                <p class="stat-value income" id="totalIncome">Rp 0</p>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon expense">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="stat-details">
+                                <p class="stat-label">Pengeluaran</p>
+                                <p class="stat-value expense" id="totalExpense">Rp 0</p>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon profit">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="12" cy="17" r="3" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="stat-details">
+                                <p class="stat-label">Keuntungan</p>
+                                <p class="stat-value profit" id="totalProfit">Rp 0</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="transaction-history">
+                        <h4>Riwayat Transaksi</h4>
+                        <div class="transaction-list" id="transactionList">
+                            <div class="empty-state">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="10" stroke="#9CA3AF" stroke-width="2"/>
+                                    <path d="M12 8V12L15 15" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                <p>Belum ada transaksi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta-section" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Siap Mengubah Cara Anda Berbisnis?</h2>
+                <p>Bergabunglah dengan ribuan UMKM yang sudah merasakan kemudahan pembukuan dengan SmartBook</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary large">Mulai Gratis 14 Hari</button>
+                    <button class="btn-outline large">Hubungi Sales</button>
+                </div>
+                <p class="cta-note">Tidak perlu kartu kredit • Setup dalam 2 menit • Support 24/7</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tim Kami</h2>
+                <p>Kenalan dengan tim di balik SmartBook</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <img src="assets/ceo.jpg" alt="CEO">
+                    </div>
+                    <h3>Aditya Dwi Nugroho</h3>
+                    <p class="role">Co-Founder & CEO</p>
+                    <p class="member-bio">Visioner dengan misi memajukan UMKM Indonesia melalui teknologi</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <img src="assets/cto.jpg" alt="CTO">
+                    </div>
+                    <h3>Ilham Sholahuddin</h3>
+                    <p class="role">Co-Founder & CTO</p>
+                    <p class="member-bio">Expert AI & Machine Learning dengan passion di teknologi</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <img src="assets/manager.jpg" alt="Product Manager">
+                    </div>
+                    <h3>Muhammad Fathan Antony</h3>
+                    <p class="role">Product Manager</p>
+                    <p class="member-bio">Spesialis UX dengan fokus pada solusi UMKM Indonesia</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <img src="assets/lead.jpg" alt="Lead Developer">
+                    </div>
+                    <h3>Muhamad Farhan</h3>
+                    <p class="role">Lead Developer</p>
+                    <p class="member-bio">Full-stack developer dengan keahlian cloud architecture</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="32" rx="8" fill="#6366F1"/>
+                            <path d="M9 11C9 10.4477 9.44772 10 10 10H22C22.5523 10 23 10.4477 23 11V21C23 21.5523 22.5523 22 22 22H10C9.44772 22 9 21.5523 9 21V11Z" stroke="white" stroke-width="2"/>
+                            <path d="M13 14H19M13 17H19M13 20H16" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <span>SmartBook</span>
+                    </div>
+                    <p>Solusi pembukuan UMKM berbasis AI yang memudahkan pengelolaan keuangan bisnis Anda.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Produk</h4>
+                    <ul>
+                        <li><a href="#fitur">Fitur</a></li>
+                        <li><a href="#cara-kerja">Cara Kerja</a></li>
+                        <li><a href="#">Harga</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li><a href="#tentang">Tentang Kami</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Karir</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Kontak</h4>
+                    <ul>
+                        <li><a href="mailto:info@smartbook.id">info@smartbook.id</a></li>
+                        <li><a href="tel:+6281234567890">+62 812-3456-7890</a></li>
+                        <li>Tangerang Selatan, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SmartBook. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Kebijakan Privasi</a>
+                    <a href="#">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
